@@ -124,7 +124,7 @@ def get_transitions(s, a):
         if next_state in terminal_states:
             reward = terminal_states[next_state]  # Immediate reward upon entering terminal state
         else:
-            reward = -0.04  # Standard reward for non-terminal moves
+            reward = non_terminal_reward
 
         transitions.append((prob, next_state, reward))
 
