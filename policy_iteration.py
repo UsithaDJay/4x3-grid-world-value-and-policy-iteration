@@ -153,9 +153,9 @@ def print_policy(policy, iteration=None):
 def print_utility(U, iteration=None):
     """Print the utility-value grid."""
     if iteration is not None:
-        print(f"\nState-Value Function after iteration {iteration}:")
+        print(f"\nUtility after iteration {iteration}:")
     else:
-        print("\nState-Value Function:")
+        print("\nUtility:")
     for i in range(rows):
         for j in range(cols):
             s = (i, j)
@@ -215,5 +215,5 @@ while not is_policy_stable:
 # Final output
 print("\nOptimal Policy:")
 print_policy(policy)
-print("\nFinal State-Value Function:")
+print("\nFinal Utility:")
 print_utility(U)
